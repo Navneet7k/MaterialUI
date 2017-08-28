@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="navneet.com.materialui.DetailsActivity">
+    <ImageView
+        android:id="@+id/workout"
+        android:transitionName="profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/girl_workout" />
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="150dp"
+        android:transitionName="date"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/clock"
+        android:layout_above="@+id/label3"
+        android:background="@drawable/round_corners"
+        android:padding="7dp"
+        android:textAlignment="textEnd"
+        android:gravity="end"
+        android:text="12:00PM - 1:00PM" />
+    <TextView
+        android:id="@+id/label3"
+        android:layout_width="102dp"
+        android:transitionName="time"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/calendar"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_corners1"
+        android:padding="7dp"
+        android:textAlignment="textEnd"
+        android:gravity="end"
+        android:text="Mon - Wed" />
+
+    <!--<Button-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:id="@+id/button"-->
+        <!--android:padding="10dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:background="@drawable/round_corners1"-->
+        <!--android:text="CLEAR MESSAGE"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <RelativeLayout
+        android:id="@+id/wrapLayout"
+        android:alpha="0.3"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
